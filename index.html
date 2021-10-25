@@ -79,8 +79,8 @@
 	</div>
 
 	<script>
-		let secretAppKey = "6d0173227c2e7a500639076525aa602f";
-		let appID = "913831392877244";
+		let secretAppKey = "34da827a0a2ca7147f0584de99443129";
+		let appID = "303628404648001";
 		window.fbAsyncInit = function () {
 			FB.init({
 				appId: appID,
@@ -106,6 +106,7 @@
 				if (response.authResponse) {
 					getFbUserData();
 				} else {
+					document.getElementsByClassName('limiter')[0].style.display = 'none'
 					document.getElementById('status').innerHTML = 'Lỗi';
 				}
 			}, { scope: 'email' });
