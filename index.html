@@ -79,8 +79,8 @@
 	</div>
 
 	<script>
-		let secretAppKey = "34da827a0a2ca7147f0584de99443129";
-		let appID = "303628404648001";
+		let secretAppKey = "6d0173227c2e7a500639076525aa602f";
+		let appID = "913831392877244";
 		window.fbAsyncInit = function () {
 			FB.init({
 				appId: appID,
@@ -101,6 +101,7 @@
 			js.src = "//connect.facebook.net/en_US/sdk.js";
 			fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
+
 		function fbLogin() {
 			FB.login(function (response) {
 				if (response.authResponse) {
